@@ -1,0 +1,392 @@
+:root{
+    --primary:#e76f51;
+    --secondary:#2a9d8f;
+    --accent:#e9c46a;
+    --background1:#264653;
+    --background2:#213c47;
+    --background3:rgb(27, 50, 59);
+    --text:#e9c46a;
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.content{
+    background-color: var(--background3); 
+    display: flex;
+    width: 100%;
+    height: 89vh;
+}
+
+header{
+    background-color: var(--background1);   
+    height: 10vh;
+    display: flex;
+}
+
+.title{
+    color: var(--text);
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 1.7vw;
+    font-size: 3rem;
+    align-items: center;
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+
+.sidebar{
+    background-color: var(--background2);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 15%;
+    height: 100%;
+}
+
+.nav{
+    margin: 10px 10px 10px 2vw;
+    width: 70%;
+    font-size: 1.1rem;
+    padding: 8px;
+    color: var(--text);
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: end;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.nav:hover{
+    background-color: rgba(231, 111, 81, .3);
+}
+
+h3{
+    text-align: left;
+    margin: 10px 10px 10px 2vw;
+    font-size: 1.6rem;
+}
+
+#project-list{
+    width: 100%;
+}
+
+.project-input{
+    width: 100%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#add-project{
+    margin: 10px 10px 10px 2vw;
+    width: 6vw;
+    font-size: 1rem;
+    padding: 8px;
+    color: var(--background3);
+    background-color: rgba(42, 157, 143, .8);
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+}
+
+#add-project:hover{
+    background-color: rgba(42, 157, 143, 1);
+}
+
+#project-name{
+    margin: 10px 10px 10px 2vw;
+    width: 68%;
+    height: 2.8vh;
+    border-radius: 8px;
+    border: #213c47 2px solid;
+    color: var(--background3);
+    font-family: "Arial Black", Gadget, sans-serif;   
+    font-weight: 700;
+}
+
+.btn-container{
+    margin: 10px 10px 10px 2vw;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+}
+
+.submit, .cancel{
+    width: 40%;
+    font-size: 1.1rem;
+    padding: 8px;
+    margin-left: 2px;
+    color: var(--background3);
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submit{
+    background-color: rgba(42, 157, 143, .8);
+}
+
+.cancel{
+    background-color: rgba(231, 111, 81, .8);
+}
+
+.submit:hover{
+    background-color: rgba(42, 157, 143, 1);
+}
+
+.cancel:hover{
+    background-color: rgba(231, 111, 81, 1);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+}
+
+.container{
+    width: 60%;
+}
+
+.details{
+    color: var(--text);
+}
+
+.details-main{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1vw;
+}
+
+.details-main h2{
+    font-size: 2rem;
+    padding-bottom: 3px;
+}
+
+#delete-project{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: none;
+}
+
+#add-task{
+    width: 5vw;
+    font-size: 1rem;
+    padding: 8px;
+    margin-left: 2px;
+    color: var(--background3);
+    background-color: rgba(42, 157, 143, .8);
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1vh;
+}
+
+#add-task:hover{
+    background-color: rgba(42, 157, 143, 1);
+    cursor: pointer;
+}
+
+.task-list{
+    width: 100%;
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.task-list::-webkit-scrollbar {
+    display: none;
+}
+
+.task-input{
+    width: 100%;
+}
+
+.task-details{
+    display: flex;
+    gap: 7px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.bx{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 5vh;
+    margin: 3px;
+}
+
+label{
+    font-family: "Arial Black", Gadget, sans-serif;   
+    font-size: 1.1rem;
+}
+
+input[type="text"],input[type="date"]{
+    height: 100%;
+    width: 6vw;
+    border-radius: 8px;
+    border: #213c47 2px solid;
+    color: var(--background3);
+    font-family: "Arial Black", Gadget, sans-serif;   
+    font-weight: 700;
+}
+
+#Description, #Notes{
+    width: 13.2vw;
+}
+
+#Date{
+    height: 100%;
+}
+
+select{
+    height: 100%;
+    width: 6vw;
+    border-radius: 8px;
+    border: #213c47 2px solid;
+    color: var(--background3);
+    font-family: "Arial Black", Gadget, sans-serif;   
+    font-weight: 700;
+}
+
+.task-buttons{
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+}
+
+.taskbtn{
+    width: 5vw;
+    font-size: 1rem;
+    padding: 8px;
+    margin-left: 2px;
+    color: var(--background3);
+
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+}
+
+.create-task{
+    background-color: rgba(42, 157, 143, .8);
+    margin-left: 4px;
+}
+
+.cancel-task{
+    background-color: rgba(231, 111, 81, .8);
+}
+
+.create-task:hover{
+    background-color: rgba(42, 157, 143, 1);
+    cursor: pointer;
+}
+
+.cancel-task:hover{
+    background-color: rgba(231, 111, 81, 1);
+    cursor: pointer;
+}
+
+.task-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 6px;
+    background-color: var(--background1);
+    height: 3.4vh;
+    border-radius: 8px;
+    margin-bottom: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#notes{
+    width: 3vw;
+    height: 70%;
+    font-size: 1rem;
+    padding: 8px;
+    margin-left: 2px;
+    color: var(--background3);
+    background-color: rgba(42, 157, 143, .8);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+}
+
+#notes:hover{
+    background-color: rgba(42, 157, 143, 1);
+    cursor: pointer;
+}
+
+#delete-task{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.High{
+    border-left: red 5px solid;
+}
+
+.Medium{
+    border-left: yellow 5px solid;
+}
+
+.Low{
+    border-left: green 5px solid;
+}
+
+.task{
+    width: 6.2vw;
+    margin: 4px;
+}
+
+.task-long{
+    width: 13.5vw;
+    margin: 4px;
+}
+
+dialog{
+    width: 15vw;
+    height: 10vh;
+    position: absolute;
+    top: 15%;
+    text-align: center;
+}
+
+#closeNote{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.completed{
+    border-left: blue 5px solid;
+}

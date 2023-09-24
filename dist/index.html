@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title"><box-icon type='regular' name='calendar-check' id="title-icon" color="#e9c46a" size="3rem"></box-icon>To-Do List</h1>
+    </header>
+    <div class="content">
+      <div class="sidebar"> 
+        <button class="nav inbox" id="inbox" name="All Tasks" value="All Tasks"><box-icon name='inbox' color="#e9c46a" type='solid' ></box-icon>All Tasks</button>
+        <button class="nav today" id="today" name="Today" value="Today"><box-icon name='calendar-event' color="#e9c46a" type='regular' ></box-icon>Today</button>
+        <button class="nav week" id="week" name="This Week" value="This Week"><box-icon type='regular' color="#e9c46a" name='calendar-week'></box-icon>This Week</button>
+        <h3>Project List</h3>
+        <div id="project-list">
+        </div>
+        <div id="project-input"></div>
+        <button id="add-project">New Project</button>
+      </div>
+      <main>
+        <div class="container">
+          <div class="details">
+            <div class="details-main" id="details-main">
+            </div>
+            <div class="task-list" id="task-list">
+            </div>
+            <dialog id="noteModal">
+              <p id="noteDetails"></p>
+              <button id="closeNote"><box-icon name='x' color="#e76f51"></box-icon></button>
+            </dialog>
+            <div class="task-input" id="task-input"></div>
+            <div id="task-btn">
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
